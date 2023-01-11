@@ -1,7 +1,5 @@
 # Laracast-Path-Php8-Beginner
-Follwoing the  path [Laracast](https://laracasts.com/path)
-
-Which have 4 LEVELS
+Follwoing the  path [Laracast](https://laracasts.com/path) contains 4 levels
 
 - [Level 1- Beginners](#Level1)
 - [Level 2- Intermediate](#Level2)
