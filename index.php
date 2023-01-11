@@ -9,10 +9,13 @@
 <body>
     <h1>
         <?php
-        $greeting = "Hello";
+        echo "Episode 3";
+        include "./Episode3.php";
+        echo "Episode 4";
+        include "./Episode4.php";
+        echo "Episode 5";
+        include "./Episode5.php";
 
-        //TO INTEGRATE VARIABLE IN THE STRING MUST USE " instead of single qoute '
-        echo "$greeting World";
         ?>
     </h1>
 </body>
