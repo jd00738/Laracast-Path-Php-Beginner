@@ -8,7 +8,7 @@
 
 <body>
         <?php
-        include "./Begginer/Section 1/Episode5.php";
+        include "./Beginner/Section 1/Episode5.php";
         ?>
 </body>
 
