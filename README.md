@@ -29,6 +29,8 @@ Things learned
  - [Episode3-Your-First-PHP-Tag](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode3-Your-First-PHP-Tag)
  - [Episode4-Variables](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode4-Variables)
  - [Episode5-Conditionals-and-booleans](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode5-Conditionals-and-booleans)
+ - [Episode6-Arrays](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode6-Arrays)
+ 
 
 ## Level 2- Intermediate
 (In Queue)
