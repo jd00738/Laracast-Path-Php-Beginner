@@ -1,20 +1,20 @@
 # Laracast-Path-Php8-Beginner
 Follwoing the  path [Laracast](https://laracasts.com/path), learned php 8, Laravel 9, vue JS and some other tools and practices, it contains 4 levels
 
-- [Level 1- Beginners](#level-1--beginners)
--- [Level 1- Branches](#level-1--branches)
+1 [Level 1- Beginners](#level-1--beginners)
+ - [Level 1- Branches](#level-1--branches)
 
-- [Level 2- Intermediate](#level-2--intermediate)
--- [Level 2- Branches](#level-2--branches)
+2 [Level 2- Intermediate](#level-2--intermediate)
+ - [Level 2- Branches](#level-2--branches)
 
-- [Level 3- Medium](#level-3--medium)
--- [Level 3- Branches](#level-3--branches)
+3 [Level 3- Medium](#level-3--medium)
+ - [Level 3- Branches](#level-3--branches)
 
-- [Level 4- Advance](#level-4--advance)
--- [Level 4- Branches](#level-4--branches)
+4 [Level 4- Advance](#level-4--advance)
+ - [Level 4- Branches](#level-4--branches)
 
-- [Level 5- Advance (Extended)](#level-5--advance-extended)
--- [Level 5- Branches](#level-5--branches)
+5 [Level 5- Advance (Extended)](#level-5--advance-extended)
+ - [Level 5- Branches](#level-5--branches)
 
 ## Level 1- Beginners
 (In Progress)
@@ -26,9 +26,9 @@ Things learned
 - Object-Oriented Programming
 
 ### Level 1- Branches
- -[Episode3-Your-First-PHP-Tag](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode3-Your-First-PHP-Tag)
- -[Episode4-Variables](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode4-Variables)
- -[Episode5-Conditionals-and-booleans](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode5-Conditionals-and-booleans)
+ - [Episode3-Your-First-PHP-Tag](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode3-Your-First-PHP-Tag)
+ - [Episode4-Variables](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode4-Variables)
+ - [Episode5-Conditionals-and-booleans](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode5-Conditionals-and-booleans)
 
 ## Level 2- Intermediate
 (In Queue)
