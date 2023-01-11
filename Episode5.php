@@ -3,17 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Episode 5</title>
+    <style>
+        body {
+            display: grid;
+            height: 100vh;
+            place-items: center;
+            margin: 0;
+            font-family: 'Circular-Loom';
+
+        }
+    </style>
 </head>
 
 <body>
-    <h1>
-        <?php
-        $greeting = "Hello";
 
-        //TO INTEGRATE VARIABLE IN THE STRING MUST USE " instead of single qoute '
-        echo "$greeting World";
-        ?>
+    <?php
+    $bookName = "Dark Matter";
+    $read = true;
+    if ($read) {
+        $message = "You have read $bookName";
+    } else {
+        $message = "You have not read $bookName";
+    }
+    ?>
+
+    <h1>
+        <!-- ?= is same like init php tag it's to echo variable -->
+        <?= $message ?>
     </h1>
 </body>
 
