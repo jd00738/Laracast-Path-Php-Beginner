@@ -49,6 +49,28 @@
         return $book['releaseYear'] > 2000;
     });
 
+        // HOME WORK
+
+        $books[] = [
+            [
+                "name" => "Do Android Dream of Electric sheep",
+                "auther" => "Philpi k. Dick",
+                "purchaseUrl" => "www.example.com",
+                "releaseYear" => 1960
+            ],
+            [
+                "name" => "Project Hail Mary",
+                "auther" => "Andy Weir",
+                "purchaseUrl" => "www.example.com",
+                "releaseYear" => 2022
+            ]
+        ];
+
+        // CALLING OF LAMBDA FUNCTION IN CUSTOM FILTER FUNCTION
+        $filteredBooks = filter($books, function ($book) {
+            return $book['releaseYear'] >= 1960 && $book['releaseYear'] < 2020;
+        });
+
     ?>
 
     <h2> BOOKS </h2>
