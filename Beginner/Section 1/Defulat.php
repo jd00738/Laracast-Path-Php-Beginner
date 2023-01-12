@@ -7,9 +7,7 @@
 </head>
 
 <body>
-        <?php
-        include "./Beginner/Section 1/Episode6.php";
-        ?>
+
 </body>
 
 </html>
