@@ -24,6 +24,7 @@
         ]
     ];
 
+
     // SIMULATION FOR FILTERING OF THE BOOKS BY AUTHER
     function filterBooksByAuther($books, $auther)
     {
@@ -41,12 +42,57 @@
         }
         return $filteredBooks;
     }
+
+    // HOME WORK
+
+    $movies = [
+        [
+            "name" => "Transporter",
+            "purchaseUrl" => "www.example.com",
+            "releaseYear" => 2012
+        ],
+        [
+            "name" => "JASON BORN ULTIMATE",
+            "purchaseUrl" => "www.example.com",
+            "releaseYear" => 2000
+        ],
+        [
+            "name" => "HOME ALONE 4",
+            "purchaseUrl" => "www.example.com",
+            "releaseYear" => 2004
+        ],
+    ];
+
+    function filterMoviesByYear($movies, $year)
+    {
+        $filteredMovies = [];
+        foreach ($movies as $movie) {
+            if ($movie['releaseYear'] > $year) {
+            $filteredMovies[] = $movie;
+            }
+        }
+        return $filteredMovies;
+    }
     ?>
+
+    <h2> BOOKS </h2>
     <ul>
         <?php foreach (filterBooksByAuther($books, "Andy Weir") as $book) : ?>
             <li>
                 <a href="<?= $book['purchaseUrl'] ?>">
                     <?= $book['name'] . ', Published in ' . $book['releaseYear'] ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+
+
+    <h2> MOVIES </h2>
+    <ul>
+        <?php foreach (filterMoviesByYear($movies, 1998) as $movie) : ?>
+            <li>
+                <a href="<?= $movie['purchaseUrl'] ?>">
+                    <?= $movie['name'] . ' (' . $movie['releaseYear'] . ')' ?>
                 </a>
             </li>
         <?php endforeach; ?>
