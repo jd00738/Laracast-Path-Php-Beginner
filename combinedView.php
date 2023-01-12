@@ -13,12 +13,13 @@
         <ul>
             <li>Seciont 1
                 <ul>
-                    <li><a href="./Beginner/Section 1/Episode3.php" target="view">Episode 3</a></li>
-                    <li><a href="./Beginner/Section 1/Episode4.php" target="view">Episode 4</a></li>
-                    <li><a href="./Beginner/Section 1/Episode5.php" target="view">Episode 5</a></li>
-                    <li><a href="./Beginner/Section 1/Episode6.php" target="view">Episode 6</a></li>
-                    <li><a href="./Beginner/Section 1/Episode7.php" target="view">Episode 7</a></li>
-                    <li><a href="./Beginner/Section 1/Episode8.php" target="view">Episode 8</a></li>
+                    <li><a href="./Beginner/Section 1/Episode3.php" target="view">Episode 3: Your-First-PHP-Tag</a></li>
+                    <li><a href="./Beginner/Section 1/Episode4.php" target="view">Episode 4: Variables</a></li>
+                    <li><a href="./Beginner/Section 1/Episode5.php" target="view">Episode 5-Conditionals-and-booleans</a></li>
+                    <li><a href="./Beginner/Section 1/Episode6.php" target="view">Episode 6-Arrays</a></li>
+                    <li><a href="./Beginner/Section 1/Episode7.php" target="view">Episode 7-Associative-Arrays</a></li>
+                    <li><a href="./Beginner/Section 1/Episode8.php" target="view">Episode 8-functions-and-filters</a></li>
+                    <li><a href="./Beginner/Section 1/Episode9.php" target="view">Episode 9-LambdaFunctions</a></li>
                 </ul>
             </li>
         </ul>
