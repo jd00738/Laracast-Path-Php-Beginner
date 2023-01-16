@@ -20,6 +20,7 @@
                     <li><a href="./Beginner/Section 1/Episode7.php" target="view">Episode 7-Associative-Arrays</a></li>
                     <li><a href="./Beginner/Section 1/Episode8.php" target="view">Episode 8-functions-and-filters</a></li>
                     <li><a href="./Beginner/Section 1/Episode9.php" target="view">Episode 9-LambdaFunctions</a></li>
+                    <li><a href="./Beginner/Section 1/Episode10.php" target="view">Episode 10-Seperate-View-Template</a></li>
                 </ul>
             </li>
         </ul>
