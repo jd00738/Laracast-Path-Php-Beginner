@@ -1,2 +1,2 @@
 <?php
-require "mission.view.php";
+require "views/mission.view.php";

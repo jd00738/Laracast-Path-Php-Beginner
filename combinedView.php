@@ -25,9 +25,6 @@
             </li>
 
             <li><a href="./Beginner/Section 2" target="view">Section 2: Dynamic Web Application</a>
-                <ul>
-                    <li><a href="./Beginner/Section 2/Episode 11/" target="view">Episode 11 Page Links</a></li>
-                </ul>
             </li>
         </ul>
     </ul>
