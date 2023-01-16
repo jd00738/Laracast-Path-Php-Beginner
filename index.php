@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-<frameset cols="30%,70%">
+<frameset cols="20%,80%">
     <frame src="combinedView.php">
         <frame src="" name="view">
 </frameset>
