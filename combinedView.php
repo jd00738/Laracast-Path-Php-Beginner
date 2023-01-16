@@ -11,7 +11,7 @@
     <ul>
         <li>Beginner</li>
         <ul>
-            <li>Seciont 1
+            <li>Seciont 1: The Fundatmentals
                 <ul>
                     <li><a href="./Beginner/Section 1/Episode3.php" target="view">Episode 3: Your-First-PHP-Tag</a></li>
                     <li><a href="./Beginner/Section 1/Episode4.php" target="view">Episode 4: Variables</a></li>
@@ -21,6 +21,12 @@
                     <li><a href="./Beginner/Section 1/Episode8.php" target="view">Episode 8-functions-and-filters</a></li>
                     <li><a href="./Beginner/Section 1/Episode9.php" target="view">Episode 9-LambdaFunctions</a></li>
                     <li><a href="./Beginner/Section 1/Episode10.php" target="view">Episode 10-Seperate-View-Template</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./Beginner/Section 2" target="view">Section 2: Dynamic Web Application</a>
+                <ul>
+                    <li><a href="./Beginner/Section 2/Episode 11/" target="view">Episode 11 Page Links</a></li>
                 </ul>
             </li>
         </ul>
