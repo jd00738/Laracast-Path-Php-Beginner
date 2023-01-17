@@ -17,10 +17,26 @@ $config = require('config.php');
 // CREATING OBJECT FOR DATABASE
 $db = new Database($config['database']);
 
+// ID FROM PARAM 
+$id = $_GET['id'];
+
 // EXECUTING CUSTOM QUERY
+// CAN USE '?' OR USE KEY FOLLOWING ':' 
+
+//QUERY WITH ? 
+// $query = "select * from post where id = ? ";
+
+// QUERT WITH KEY
+$query = "select * from post where id = :id ";
+
 // FETCHING AS ASSOCIATE ARRAY AND RETURNING RESPONSE
-// SELECTING FETCH OR FETHC ALL ACCORDING TO THE FETCHED DATA FROM DB 
-$posts = $db->query("select * from post where id=1")->fetch();
+// SELECTING FETCH OR FETCH ALL ACCORDING TO THE QURIED DATA FROM DB 
+
+// QUERY EXEC WITH PARAM ?
+// $posts = $db->query($query, [$id])->fetch();
+
+// QUERY EXEC WIHT KEY PARAM
+$posts = $db->query($query, [':id' => $id])->fetch();
 
 // ITERATION TO FETCH DATA
 // foreach ($posts as $post) {
