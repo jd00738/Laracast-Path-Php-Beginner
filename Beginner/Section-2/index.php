@@ -10,13 +10,17 @@ require "Database.php";
 // require "route.php";
 
 
+// TO DEFINE LOCAL DB CONNECTIVITY
+$config = require('config.php');
+
+
 // CREATING OBJECT FOR DATABASE
-$db = new Database();
+$db = new Database($config['database']);
 
 // EXECUTING CUSTOM QUERY
 // FETCHING AS ASSOCIATE ARRAY AND RETURNING RESPONSE
 // SELECTING FETCH OR FETHC ALL ACCORDING TO THE FETCHED DATA FROM DB 
-$posts = $db->query("select * from post where id=1")->fetch(PDO::FETCH_ASSOC);
+$posts = $db->query("select * from post where id=1")->fetch();
 
 // ITERATION TO FETCH DATA
 // foreach ($posts as $post) {
@@ -24,4 +28,4 @@ $posts = $db->query("select * from post where id=1")->fetch(PDO::FETCH_ASSOC);
 // }
 
 // FOR SINGLE RECORD
-echo "<li>".$posts['title']."</li>";
+echo "<li>" . $posts['title'] . "</li>";
