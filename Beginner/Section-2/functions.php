@@ -20,9 +20,7 @@ function dumpAndDie($value)
 
 function urlIs($value)
 {
-    $route = explode("/", $_SERVER['REQUEST_URI']);
-
-    $route = $route[sizeof($route) - 1];
-
-    return $route == $value;
+    $route = $_SERVER['REQUEST_URI'];
+    return $route === $value;
 }
+
