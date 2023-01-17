@@ -11,13 +11,15 @@ class Database
     /**
      * WHEN EVER INSTANCE IS CREATED CONNECT TO THE DATABASE
      */
-    public function __construct()
+    public function __construct($config, $username = 'root', $password = 'root')
     {
         // CONNECTION STRING
-        $dsn = "mysql:host=mysql-dev;port=3306;dbname=myapp;charset=utf8mb4";
-
+        // QUERY BUILDER CREATED QUERY PARAM FOR PATH THE SEPERATOR HELPS IN CREATING STRING FOR DSN 
+        $dsn = 'mysql:' . http_build_query($config, '', ';');
         // CREATING CONNECTION 
-        $this->connection = new PDO($dsn, 'root', 'root');
+        $this->connection = new PDO($dsn, $username, $password, [
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ]);
     }
 
     /**
