@@ -25,14 +25,6 @@ Things learned
 - Database Access
 - Object-Oriented Programming
 
-### Level 1- Branches
- - [Episode3-Your-First-PHP-Tag](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode3-Your-First-PHP-Tag)
- - [Episode4-Variables](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode4-Variables)
- - [Episode5-Conditionals-and-booleans](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode5-Conditionals-and-booleans)
- - [Episode6-Arrays](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode6-Arrays)
- - [Episode7-Associative-Arrays](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode7-Associative-Arrays)
- - [Episode8-functions-and-filters](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode8-functions-and-filters)
- - [Episode9-LambdaFunctions](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode9-LambdaFunctions)
 ## Level 2- Intermediate
 (In Queue)
 After having an initial understanding of PHP and MySQL, will leap into the Laravel space. In this level, will learn the essentials of Laravel, basic testing, and deployment.
@@ -42,7 +34,6 @@ Laravel Essentials
 Database Design
 Deployment
 
-### Level 2- Branches
 
 ## Level 3- Medium
 (In Queue)
@@ -53,7 +44,6 @@ JavaScript Basics
 Vue
 Single-Page Apps
 
-### Level 3- Branches
 
 ## Level 4- Advance
 (In Queue)
@@ -65,7 +55,6 @@ Multi-tenancy
 Queues
 Coding Workshops
 
-### Level 4- Branches
 
 ## Level 5- Advance (Extended)
 (In Queue)
