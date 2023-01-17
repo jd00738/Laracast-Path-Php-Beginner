@@ -24,14 +24,14 @@ class Database
 
     /**
      * TO EXECUATE QUERY FROM DATABASE
+     * SET PARAM TO PREVENT SQL INJECTION
      */
-    public function query($query)
+    public function query($query, $params = [])
     {
         // PREPARING QUERY FOR EXECUTION
         $statement = $this->connection->prepare($query);
-
         // EXECUTING STATEMENTS
-        $statement->execute();
+        $statement->execute($params);
 
         //RETURN STATMENTS SO FETCH OR FETCHALL CAN BE HANDLE ON THE USER CHOISE
         return $statement;
