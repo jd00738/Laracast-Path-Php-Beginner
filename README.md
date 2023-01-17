@@ -2,10 +2,10 @@
 Follwoing the  path [Laracast](https://laracasts.com/path), learned php 8, Laravel 9, vue JS and some other tools and practices, it contains 4 levels
 
 1 [Level 1- Beginners](#level-1--beginners)
- - [Level 1- Branches](#level-1--branches)
+ - [Level 1- Branches](https://github.com/jd00738/Laracast-Path-Php8-Beginner/blob/master/Beginner/Section-1/README.md#level-1--branches)
 
 2 [Level 2- Intermediate](#level-2--intermediate)
- - [Level 2- Branches](#level-2--branches)
+ - [Level 2- Branches](https://github.com/jd00738/Laracast-Path-Php8-Beginner/blob/master/Beginner/Section-2/README.md#level-1--branches)
 
 3 [Level 3- Medium](#level-3--medium)
  - [Level 3- Branches](#level-3--branches)
