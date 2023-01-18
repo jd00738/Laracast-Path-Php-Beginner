@@ -8,3 +8,5 @@
 - [Episode17-PDO-First-Step](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode17-PDO-First-Step)
 - [Episode18-Extract-a-php-database-class](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode18-Extract-a-php-database-class)
 - [Episode19-Envoirment-and-configuration-flexibility](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode19-Envoirment-and-configuration-flexibility)
+- [Episode22-Render-the-notes-page](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode22-Render-the-notes-page)
+- [Episode23-Introduction-to-Autherization](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode23-Introduction-to-Autherization)
