@@ -6,7 +6,11 @@
 
 class Database
 {
+    // FOR CONNECTION STRING
     public $connection;
+
+    // FOR DB STATEMENTS
+    public $statement;
 
     /**
      * WHEN EVER INSTANCE IS CREATED CONNECT TO THE DATABASE
@@ -29,11 +33,53 @@ class Database
     public function query($query, $params = [])
     {
         // PREPARING QUERY FOR EXECUTION
-        $statement = $this->connection->prepare($query);
+        $this->statement = $this->connection->prepare($query);
         // EXECUTING STATEMENTS
-        $statement->execute($params);
+        $this->statement->execute($params);
 
         //RETURN STATMENTS SO FETCH OR FETCHALL CAN BE HANDLE ON THE USER CHOISE
-        return $statement;
+        return $this;
+    }
+
+    /**
+     * FUNCTION TO FETCH ALL RECORDS FROM DATABASE
+     */
+    public function findAll()
+    {
+        return $this->statement->fetchall();
+    }
+
+    /**
+     * FUNCTION TO FETCH ALL EXTENDED WITH ABORT
+     */
+
+    public function findAllOrFail()
+    {
+        $result = $this->findAll();
+        if (!$result) {
+            abort();
+        }
+        return $result;
+    }
+
+    /**
+     * FUNCTION TO FIND SINGLE RECORD
+     */
+
+    public function find()
+    {
+        return $this->statement->fetch();
+    }
+
+    /**
+     * FUNCTION TO FIND SINGLE RECORD EXTENDED WIHT ABORT
+     */
+    public function findOrFail()
+    {
+        $result = $this->find();
+        if (!$result) {
+            abort();
+        }
+        return $result;
     }
 }
