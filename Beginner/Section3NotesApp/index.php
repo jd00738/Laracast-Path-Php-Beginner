@@ -7,7 +7,7 @@
 require "functions.php";
 require "Database.php";
 
-// require "route.php";
+require "route.php";
 
 
 // TO DEFINE LOCAL DB CONNECTIVITY31
@@ -21,12 +21,12 @@ $db = new Database($config['database']);
 $id = $_GET['id'];
 
 // EXECUTING CUSTOM QUERY
-// CAN USE '?' OR USE KEY FOLLOWING ':' 
+// CAN USE PLACEHOLDER '?' OR USE KEY FOLLOWING WILDCARD ':' 
 
-//QUERY WITH ? 
+//QUERY WITH PLACE HOLDER 
 // $query = "select * from post where id = ? ";
 
-// QUERT WITH KEY
+// QUERT WITH WILD CARD
 $query = "select * from post where id = :id ";
 
 // FETCHING AS ASSOCIATE ARRAY AND RETURNING RESPONSE
