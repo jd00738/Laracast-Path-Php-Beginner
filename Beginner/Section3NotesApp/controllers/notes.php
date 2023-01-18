@@ -8,7 +8,6 @@ $db = new Database($config['database']);
 
 $heading = "My Notes";
 
-$notes = $db->query("SELECT * FROM `notes` WHERE user_id=2");
+$notes = $db->query("SELECT * FROM `notes` WHERE user_id=2")->findAllOrFail();
 
 require "views/notes.view.php";
- 

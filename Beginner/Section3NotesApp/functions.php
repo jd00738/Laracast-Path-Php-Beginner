@@ -14,7 +14,7 @@ function dumpAndDie($value)
 }
 
 /** 
- * Function to get actural url to ge 
+ * FUNCTION TO GET THE URL PATH 
  * 
  */
 
@@ -24,3 +24,13 @@ function urlIs($value)
     return $route === $value;
 }
 
+/**
+ * FUNCTIO TO AUTHORIZE WITH CUSTOM STATUS
+ */
+
+function authorized($condition, $status = Response::FORBIDDEN)
+{
+    if (!$condition) {
+        abort($status);
+    }
+}
