@@ -9,7 +9,7 @@
         <!-- Replace with your content -->
         <div class="px-4 py-6 sm:px-0">
             <div class="h-96 rounded-lg border-4 border-dashed border-gray-200">
-                <h1 class="text-2xl font-bold"> Sorrt, Page Not Found</h1>
+                <h1 class="text-2xl font-bold"> You are not autherized to view this page</h1>
                 <p class=:mt-4>
                     <a href="/" class="text-blue-500 hover:undeline">Go Back Home</a>
                 </p>

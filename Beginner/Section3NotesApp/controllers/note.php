@@ -8,6 +8,18 @@ $db = new Database($config['database']);
 
 $heading = "My Notes";
 
+// FETCH NOTE FROM DB FOR SPECFIC ID
 $note = $db->query("SELECT * FROM `notes` WHERE id = :id", ["id" => $_GET['id']])->fetch();
+
+
+// IF RETURN VALUE IS FALSE THEN ABORT THE WITH 404
+if (!$note) {
+    abort(Response::NOT_FOUND);
+}
+
+//IF RECORD EXISTS BUT NOT FOR THE ACCESSING USER THEN ABORT WITH 403 i.e. FORBIDDEN
+if ($note['user_id'] !== '2') {
+    abort(Response::FORBIDDEN);
+}
 
 require "views/note.view.php";
