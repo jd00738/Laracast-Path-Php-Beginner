@@ -16,4 +16,4 @@ if ($note['user_id'] !== 2) {
     abort(Response::FORBIDDEN);
 }
 
-require "views/note.view.php";
+require "views/notes/show.view.php";
