@@ -2,25 +2,20 @@
 // TO DEFINE LOCAL DB CONNECTIVITY31
 $config = require('config.php');
 
+//TO GET THE VALIDATOR CLASS
+require('Validator.php');
 
 // CREATING OBJECT FOR DATABASE
 $db = new Database($config['database']);
+$validator = new Validator();
 
 $heading = "New Notes";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $error = [];
-    if (strlen($_POST['body']) == 0) {
-        $error['body'] = "Body is required";
-    }
-
-    if (strlen($_POST['body']) < 10) {
-        $error['body'] = "minimum allowed character are 10";
-    }
-
-    if (strlen($_POST['body']) > 1000) {
-        $error['body'] = "maximum allowed character are 1000";
+    if (!Validator::string($_POST['body'], 1, 1000)) {
+        $error['body'] = "A body of no more then 1000 characters is required";
     }
 
     if (empty($error)) {
