@@ -8,7 +8,7 @@
     <title>NOTES APP</title>
 
     <!-- IMPORT TAILWIND CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 </head>
 
 <body class="h-full">

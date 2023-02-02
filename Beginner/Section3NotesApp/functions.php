@@ -25,7 +25,7 @@ function urlIs($value)
 }
 
 /**
- * FUNCTIO TO AUTHORIZE WITH CUSTOM STATUS
+ * FUNCTION TO AUTHORIZE WITH CUSTOM STATUS
  */
 
 function authorized($condition, $status = Response::FORBIDDEN)

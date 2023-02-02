@@ -1,25 +1,6 @@
 <?php
 
-/**
- * USE PHP PARSE URL TO GET THE PATH 
- * HELPFUL IN CASE OF URL ALSO CONTAINS QUERY PARAMS 
- * 
- */
-$uri = parse_url($_SERVER['REQUEST_URI'])["path"];
-
-/**
- * BELOW CONDITION WILL HELP IN ROUTING OF THE APP ACCORDING TO PATH IN THE URL 
- */
-
-$routes = [
-    '/' => "controllers/index.php",
-    '/about' => "controllers/about.php",
-    '/contact' => "controllers/contact.php",
-    '/notes' => "controllers/notes.php",
-    '/note' => "controllers/note.php",
-
-];
-
+$routes = require('routes.php');
 
 /**
  * REDIRECTING TO THE CONTROLLER
@@ -44,5 +25,12 @@ function abort($statusCode = 404)
     http_response_code($statusCode);
     require("views/{$statusCode}.php");
 }
+
+/**
+ * USE PHP PARSE URL TO GET THE PATH 
+ * HELPFUL IN CASE OF URL ALSO CONTAINS QUERY PARAMS 
+ * 
+ */
+$uri = parse_url($_SERVER['REQUEST_URI'])["path"];
 
 routeToController($uri, $routes);

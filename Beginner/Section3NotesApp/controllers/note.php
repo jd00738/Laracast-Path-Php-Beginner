@@ -12,7 +12,7 @@ $heading = "My Notes";
 $note = $db->query("SELECT * FROM `notes` WHERE id = :id", ["id" => $_GET['id']])->findOrFail();
 
 //IF RECORD EXISTS BUT NOT FOR THE ACCESSING USER THEN ABORT WITH 403 i.e. FORBIDDEN
-if ($note['user_id'] !== '2') {
+if ($note['user_id'] !== 2) {
     abort(Response::FORBIDDEN);
 }
 

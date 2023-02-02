@@ -10,13 +10,19 @@
         <!-- Replace with your content -->
         <div class="px-4 py-6 sm:px-0">
             <div class="h-96 rounded-lg border-4 border-dashed border-gray-200">
-                <?php foreach ($notes as $note) : ?>
+                <p class="mb-6">
+                    <a href="/notes/create" class="text-blue-500 hover:underline"> Create Note</a>
+                </p>
 
-                    <a href="/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
-                        <li> <?= $note['body'] ?></li>
-                    </a>
+                <ul>
+                    <?php foreach ($notes as $note) : ?>
 
-                <?php endforeach; ?>
+                        <a href="/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
+                            <li> <?= $note['body'] ?></li>
+                        </a>
+
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
         <!-- /End replace -->
