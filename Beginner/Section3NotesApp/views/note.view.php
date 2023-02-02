@@ -13,7 +13,7 @@
                 <p class="mb-6">
                     <a href="/notes" class="text-blue-500">Back...</a>
                 </p>
-                <p> <?= $note['body'] ?></p>
+                <p> <?= htmlspecialchars($note['body']) ?></p>
 
             </div>
         </div>
