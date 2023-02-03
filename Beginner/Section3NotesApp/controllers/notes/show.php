@@ -1,4 +1,7 @@
 <?php
+
+
+use core\Database;
 // TO DEFINE LOCAL DB CONNECTIVITY31
 $config = require base_path('config.php');
 
