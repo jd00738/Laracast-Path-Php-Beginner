@@ -1,21 +1,20 @@
 <?php
 // TO DEFINE LOCAL DB CONNECTIVITY31
-$config = require('config.php');
+$config = require base_path('config.php');
 
 //TO GET THE VALIDATOR CLASS
-require('Validator.php');
+require base_path('Validator.php');
 
 // CREATING OBJECT FOR DATABASE
 $db = new Database($config['database']);
 $validator = new Validator();
 
-$heading = "New Notes";
-
+$errors = [];
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $error = [];
+
     if (!Validator::string($_POST['body'], 1, 1000)) {
-        $error['body'] = "A body of no more then 1000 characters is required";
+        $errors['body'] = "A body of no more then 1000 characters is required";
     }
 
     if (empty($error)) {
@@ -25,4 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         ]);
     }
 }
-require "views/notes/create.view.php";
+
+view("notes/create.view.php", [
+    'heading' => 'New Notes',
+    'errors' => $errors
+]);
