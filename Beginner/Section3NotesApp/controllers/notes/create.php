@@ -1,9 +1,13 @@
 <?php
+
+use core\Database;
+use core\Validator;
+
 // TO DEFINE LOCAL DB CONNECTIVITY31
 $config = require base_path('config.php');
 
 //TO GET THE VALIDATOR CLASS
-require base_path('Validator.php');
+require base_path('core/Validator.php');
 
 // CREATING OBJECT FOR DATABASE
 $db = new Database($config['database']);

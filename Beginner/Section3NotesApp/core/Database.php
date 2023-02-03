@@ -1,9 +1,15 @@
 <?php
 
+namespace core;
+
+/**
+ * TO ACCESS THE GLOBAL PHP  CLASSES CAN USE \PDO or 'use' after the name space 
+ */
+use PDO;
+
 /**
  * CREATE DATABASE CLASS TO HANDLE THE PDO INSTANCE AND DB RELATE WORKING
  */
-
 class Database
 {
     // FOR CONNECTION STRING

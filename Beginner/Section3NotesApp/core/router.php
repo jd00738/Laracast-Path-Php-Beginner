@@ -1,6 +1,6 @@
 <?php
 
-$routes = require('routes.php');
+$routes = require base_path('routes.php');
 
 /**
  * REDIRECTING TO THE CONTROLLER
@@ -10,7 +10,7 @@ function routeToController($uri, $routes)
 {
 
     if (array_key_exists($uri, $routes)) {
-        require $routes[$uri];
+        require base_path($routes[$uri]);
     } else {
         abort();
     }
@@ -23,7 +23,7 @@ function routeToController($uri, $routes)
 function abort($statusCode = 404)
 {
     http_response_code($statusCode);
-    require("views/{$statusCode}.php");
+    require base_path("views/{$statusCode}.php");
 }
 
 /**

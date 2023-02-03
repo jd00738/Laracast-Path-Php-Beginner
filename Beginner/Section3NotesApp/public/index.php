@@ -10,7 +10,7 @@ const BASE_PATH = __DIR__ . '/../';
 /**
  * THIS FILE IS TO SET THE COMMON FUNCTIONS OR UTILITY OF THE APP
  */
-require BASE_PATH . "functions.php";
+require BASE_PATH . "core/functions.php";
 
 /**
  * THIS FILE IS TO SET THE DATABASE CONFIGURATION OF THE APP
@@ -32,7 +32,9 @@ require BASE_PATH . "functions.php";
  * TO AUTOLOAD FILES
  */
 spl_autoload_register(function ($class) {
-    require base_path("core/{$class}.php");
+
+    $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+    require base_path("{$class}.php");
 });
 
-require base_path("router.php");
+require base_path("core/router.php");
