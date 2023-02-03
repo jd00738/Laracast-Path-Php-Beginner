@@ -1,5 +1,5 @@
 <?php
-
+use core\Response;
 /**
  * Function to dump any value and kill the process
  * 
