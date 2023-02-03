@@ -34,3 +34,22 @@ function authorized($condition, $status = Response::FORBIDDEN)
         abort($status);
     }
 }
+
+/**
+ * HELPER FUNCTION TO ACCESS THE ROOT FOLDER AND BASE PATH
+ */
+
+function base_path($path)
+{
+    return BASE_PATH . $path;
+}
+
+/**
+ * HELPER FUNCTION TO LOAD VIEW AND DATA
+ */
+
+function view($path, $attributes = [])
+{
+    extract($attributes);
+    require base_path('views/' . $path);
+}

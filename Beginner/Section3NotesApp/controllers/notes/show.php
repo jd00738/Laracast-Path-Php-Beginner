@@ -1,12 +1,10 @@
 <?php
 // TO DEFINE LOCAL DB CONNECTIVITY31
-$config = require('config.php');
+$config = require base_path('config.php');
 
 
 // CREATING OBJECT FOR DATABASE
 $db = new Database($config['database']);
-
-$heading = "My Notes";
 
 // FETCH NOTE FROM DB FOR SPECFIC ID
 $note = $db->query("SELECT * FROM `notes` WHERE id = :id", ["id" => $_GET['id']])->findOrFail();
@@ -16,4 +14,7 @@ if ($note['user_id'] !== 2) {
     abort(Response::FORBIDDEN);
 }
 
-require "views/notes/show.view.php";
+view("notes/show.view.php", [
+    'heading' => 'My Note',
+    'note' => $note
+]);
