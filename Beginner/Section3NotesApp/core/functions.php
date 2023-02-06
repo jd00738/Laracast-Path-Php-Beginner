@@ -1,5 +1,7 @@
 <?php
+
 use core\Response;
+
 /**
  * Function to dump any value and kill the process
  * 
@@ -52,4 +54,10 @@ function view($path, $attributes = [])
 {
     extract($attributes);
     require base_path('views/' . $path);
+}
+
+function abort($statusCode = 404)
+{
+    http_response_code($statusCode);
+    require base_path("views/{$statusCode}.php");
 }
