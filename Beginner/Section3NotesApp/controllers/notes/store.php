@@ -1,13 +1,13 @@
 <?php
 
-use core\Database;
 use core\Validator;
 
-// TO DEFINE LOCAL DB CONNECTIVITY31
-$config = require base_path('config.php');
+use core\App;
+use core\Database;
 
-// CREATING OBJECT FOR DATABASE
-$db = new Database($config['database']);
+
+$db = App::resolve(Database::class);
+
 
 $errors = [];
 
