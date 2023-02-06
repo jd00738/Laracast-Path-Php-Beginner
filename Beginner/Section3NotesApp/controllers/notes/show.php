@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // FETCH NOTE FROM DB FOR SPECFIC ID
     $note = $db->query("SELECT * FROM `notes` WHERE id = :id", ["id" => $_GET['id']])->findOrFail();
 
-    authorized($note['user_id'] == 2);
+    authorized($note['user_id'] == 25);
 
     $db->query("DELETE FROM notes WHERE id=:id", [
         'id' => $_POST['id']
@@ -27,11 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $note = $db->query("SELECT * FROM `notes` WHERE id = :id", ["id" => $_GET['id']])->findOrFail();
 
     //IF RECORD EXISTS BUT NOT FOR THE ACCESSING USER THEN ABORT WITH 403 i.e. FORBIDDEN
-    if ($note['user_id'] !== 2) {
-        abort(Response::FORBIDDEN);
-    }
-
-
+    authorized($note['user_id'] == 2);
 
     view("notes/show.view.php", [
         'heading' => 'My Note',
