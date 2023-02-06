@@ -1,13 +1,11 @@
 <?php
 
+use core\App;
 use core\Database;
 
-// TO DEFINE LOCAL DB CONNECTIVITY31
-$config = require base_path('config.php');
 
+$db = App::resolve(Database::class);
 
-// CREATING OBJECT FOR DATABASE
-$db = new Database($config['database']);
 
 
 $notes = $db->query("SELECT * FROM `notes` WHERE user_id=2")->findAll();

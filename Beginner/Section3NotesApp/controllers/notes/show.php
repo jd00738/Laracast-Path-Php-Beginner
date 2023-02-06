@@ -1,13 +1,11 @@
 <?php
 
-
+use core\App;
 use core\Database;
-// TO DEFINE LOCAL DB CONNECTIVITY31
-$config = require base_path('config.php');
 
 
-// CREATING OBJECT FOR DATABASE
-$db = new Database($config['database']);
+$db = App::resolve(Database::class);
+
 
 // FETCH NOTE FROM DB FOR SPECFIC ID
 $note = $db->query("SELECT * FROM `notes` WHERE id = :id", ["id" => $_GET['id']])->findOrFail();

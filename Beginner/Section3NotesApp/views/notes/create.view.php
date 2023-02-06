@@ -10,7 +10,7 @@
         <div>
             <div class="md:grid md:grid-cols-3 md:gap-6">
                 <div class="mt-5 md:col-span-2 md:mt-0">
-                    <form method="POST" action="/notes">
+                    <form method="POST" action="/notes/create">
                         <div class="shadow sm:overflow-hidden sm:rounded-md">
                             <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
 
