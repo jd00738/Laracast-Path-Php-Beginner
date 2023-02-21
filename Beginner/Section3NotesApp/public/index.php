@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 /**
  * CONSTANT FOR ROOT DIRECTORY PATH
  */
