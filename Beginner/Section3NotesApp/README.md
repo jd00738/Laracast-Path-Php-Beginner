@@ -24,3 +24,5 @@
 - [Episode35-Service-Container](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode35-Service-Container)
 - [Episode36-Updating-with-patch-request](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode36-Updating-with-patch-request)
 - [Episode37-Sessions](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode37-Sessions)
+- [Episode38-RegisterNewUser](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode38-RegisterNewUser)
+- [Episode39-Middleware](https://github.com/jd00738/Laracast-Path-Php8-Beginner/tree/Episode39-Middleware)
