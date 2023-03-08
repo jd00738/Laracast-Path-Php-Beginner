@@ -18,7 +18,7 @@ class App
     }
 
     /**
-     * FUNCTIOT TO GET CONTAINERS
+     * FUNCTION TO GET CONTAINERS
      */
     public static function container()
     {
